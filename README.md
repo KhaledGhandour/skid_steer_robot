@@ -9,12 +9,12 @@
 
 This project is an autonomous skid-steer robot equipped with:
 
-1-2D Lidar (A2 RPLIDAR): Provides 360-degree distance measurements to create a 2D map of the robot’s surroundings, essential for obstacle detection and mapping.
-2-Camera (RealSense D435): Captures depth and color images for advanced perception tasks, including object recognition and spatial understanding.
-3-IMU (MPU 6050): Measures acceleration and angular velocity to provide orientation and movement data, crucial for stabilization and navigation.
-4-Ultrasonic Sensor (HC-SR04): Uses sound waves to measure distance to nearby objects, useful for collision avoidance and distance sensing.
-5-Mono Camera (object detection & visual navigation)
-6-3D LiDAR (high-resolution 3D perception)
+- **2D Lidar (A2 RPLIDAR):** Provides 360-degree distance measurements to create a 2D map of the robot’s surroundings, essential for obstacle detection and mapping.
+- **Camera (RealSense D435):** Captures depth and color images for advanced perception tasks, including object recognition and spatial understanding.
+- **IMU (MPU 6050):** Measures acceleration and angular velocity to provide orientation and movement data, crucial for stabilization and navigation.
+- **Ultrasonic Sensor (HC-SR04):** Uses sound waves to measure distance to nearby objects, useful for collision avoidance and distance sensing.
+- **Mono Camera** (object detection & visual navigation)
+- **3D LiDAR** (high-resolution 3D perception)
 
 Built using ROS (Robot Operating System) for sensor fusion and navigation.
 
@@ -49,12 +49,12 @@ Built using ROS (Robot Operating System) for sensor fusion and navigation.
 
 ## 🔧 Key Algorithms
 
-# Feature                         #Algorithm                                    #Description
+### Feature                         Algorithm                                    Description
 
-Obstacle Avoidance**            RRT (Rapidly-exploring Random Tree)	         #Uses LiDAR + Ultrasonic data
+- **Obstacle Avoidance**            **RRT (Rapidly-exploring Random Tree)**	    **Uses LiDAR + Ultrasonic data**
 
-Object Detection	              #YOLOv5 / SSD	                               #Processes mono camera feed
+- **Object Detection**	              **YOLOv5 / SSD**                          **Processes mono camera feed**
 
-SLAM	                          #Gmapping / Cartographer	                     #2D LiDAR-based mapping
+- **SLAM**                          **Gmapping / Cartographer**	                     **2D LiDAR-based mapping**
 
-3D Perception	                  #PCL (Point Cloud Library)	                   #Processes 3D LiDAR data
+- **3D Perception**                  **PCL (Point Cloud Library)**                   **Processes 3D LiDAR data**
