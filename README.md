@@ -1,8 +1,8 @@
 #Autonomous Skid-Steer Robot 🤖
 
-(Using Ultrasonic, IMU, Mono Camera, 2D & 3D LiDAR)
+(Using Ultrasonic, IMU, Mono Camera,Camera, 2D & 3D LiDAR)
 
-Robot Demo (Add a GIF/video of your robot in action)
+
 
 
 ##📌 Overview
