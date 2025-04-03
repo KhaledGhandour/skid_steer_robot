@@ -59,3 +59,30 @@ Built using ROS (Robot Operating System) for sensor fusion and navigation.
 - **SLAM**                          | Gmapping / Cartographer |                     | 2D LiDAR-based mapping |
 
 - **3D Perception**                  |PCL (Point Cloud Library) |                 | Processes 3D LiDAR data |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Contact 📧
+
+**Developer:** [Your Name]
+
+**Email:** khaled.essam.200230@gmail.com
+
+**Project Link:** https://github.com/KhaledGhandour/skid-steer-robot
