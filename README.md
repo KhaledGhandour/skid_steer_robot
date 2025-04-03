@@ -81,8 +81,8 @@ Built using ROS (Robot Operating System) for sensor fusion and navigation.
 
 ## Contact 📧
 
-**Developer:** [Your Name]
+**Developer:**  Khaled Ghandour
 
 **Email:** khaled.essam.200230@gmail.com
 
-**Project Link:** https://github.com/KhaledGhandour/skid-steer-robot
+**Project Link:** https://github.com/KhaledGhandour/skid_steer_robot.git
