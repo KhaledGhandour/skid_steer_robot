@@ -51,10 +51,13 @@ Built using ROS (Robot Operating System) for sensor fusion and navigation.
 
 
 ##🔧 Key Algorithms
+
 #Feature                         #Algorithm                                    #Description
 
-
 Obstacle Avoidance	            RRT (Rapidly-exploring Random Tree)	         Uses LiDAR + Ultrasonic data
+
 Object Detection	              YOLOv5 / SSD	                               Processes mono camera feed
+
 SLAM	                          Gmapping / Cartographer	                     2D LiDAR-based mapping
+
 3D Perception	                  PCL (Point Cloud Library)	                   Processes 3D LiDAR data
