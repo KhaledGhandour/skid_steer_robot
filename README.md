@@ -1,5 +1,6 @@
 # Autonomous Skid-Steer Robot 🤖
 
+ ROS Noetic | URDF | Gazebo | Multi-Sensor Integration
 (Using Ultrasonic, IMU, Mono Camera,Camera, 2D & 3D LiDAR)
 
 
@@ -17,9 +18,14 @@ This project is an autonomous skid-steer robot equipped with:
 - **3D LiDAR** (high-resolution 3D perception)
 
 Built using ROS (Robot Operating System) for sensor fusion and navigation.
+# Getting Started
+## Prerequisites
 
+    Ubuntu 20.04 LTS
 
-## ⚙️ Dependencies
+    ROS Noetic (full desktop recommended)
+
+    Gazebo 11
 
     ROS Noetic 
 
@@ -33,7 +39,7 @@ Built using ROS (Robot Operating System) for sensor fusion and navigation.
 
 ### Clone the repository:
     
-    git clone https://github.com/KhaledGhandour/skid-steer-robot.git
+    git clone https://github.com/KhaledGhandour/skid_steer_robot.git
     cd skid-steer-robot
 
 ### Install dependencies:
@@ -45,6 +51,12 @@ Built using ROS (Robot Operating System) for sensor fusion and navigation.
 
     roslaunch skid_steer_robot robot_description.launch
 
+
+# Start SLAM mapping
+roslaunch diffbot_navigation gmapping.launch
+
+# Run teleoperation
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
 
 ## 🔧 Key Algorithms
