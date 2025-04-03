@@ -52,11 +52,14 @@ Built using ROS (Robot Operating System) for sensor fusion and navigation.
     roslaunch skid_steer_robot robot_description.launch
 
 
-# Start SLAM mapping
-roslaunch diffbot_navigation gmapping.launch
+## Start SLAM mapping
 
-# Run teleoperation
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+    roslaunch diffbot_navigation gmapping.launch
+   
+## Run teleoperation
+
+    rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+
 
 
 ## 🔧 Key Algorithms
