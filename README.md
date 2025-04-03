@@ -3,6 +3,8 @@
 (Using Ultrasonic, IMU, Mono Camera, 2D & 3D LiDAR)
 
 Robot Demo (Add a GIF/video of your robot in action)
+
+
 ##📌 Overview
 
 This project is an autonomous skid-steer robot equipped with:
@@ -49,7 +51,7 @@ Built using ROS (Robot Operating System) for sensor fusion and navigation.
 
 
 ##🔧 Key Algorithms
-Feature                         Algorithm                                    Description
+#Feature                         #Algorithm                                    #Description
 
 
 Obstacle Avoidance	            RRT (Rapidly-exploring Random Tree)	         Uses LiDAR + Ultrasonic data
