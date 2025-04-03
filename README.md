@@ -1,28 +1,25 @@
-#Autonomous Skid-Steer Robot 🤖
+# Autonomous Skid-Steer Robot 🤖
 
 (Using Ultrasonic, IMU, Mono Camera,Camera, 2D & 3D LiDAR)
 
 
 
 
-##📌 Overview
+## 📌 Overview
 
 This project is an autonomous skid-steer robot equipped with:
 
-    Ultrasonic sensors (obstacle avoidance)
-
-    IMU (inertial measurement for orientation & acceleration)
-
-    Mono Camera (object detection & visual navigation)
-
-    2D LiDAR (SLAM & environment mapping)
-
-    3D LiDAR (high-resolution 3D perception)
+1-2D Lidar (A2 RPLIDAR): Provides 360-degree distance measurements to create a 2D map of the robot’s surroundings, essential for obstacle detection and mapping.
+2-Camera (RealSense D435): Captures depth and color images for advanced perception tasks, including object recognition and spatial understanding.
+3-IMU (MPU 6050): Measures acceleration and angular velocity to provide orientation and movement data, crucial for stabilization and navigation.
+4-Ultrasonic Sensor (HC-SR04): Uses sound waves to measure distance to nearby objects, useful for collision avoidance and distance sensing.
+5-Mono Camera (object detection & visual navigation)
+6-3D LiDAR (high-resolution 3D perception)
 
 Built using ROS (Robot Operating System) for sensor fusion and navigation.
 
 
-##⚙️ Dependencies
+## ⚙️ Dependencies
 
     ROS Noetic 
 
@@ -32,29 +29,29 @@ Built using ROS (Robot Operating System) for sensor fusion and navigation.
 
     realsense-ros (if using Intel RealSense)
 
-##🚀 Installation
+## 🚀 Installation
 
-    ###Clone the repository:
+### Clone the repository:
     
     git clone https://github.com/KhaledGhandour/skid-steer-robot.git
     cd skid-steer-robot
 
-    ###Install dependencies:
+### Install dependencies:
 
     sudo apt install ros-noetic-rplidar-ros ros-noetic-teleop-twist-keyboard
     pip install -r requirements.txt
 
-    ###Run the ROS launch file:
+### Run the ROS launch file:
 
     roslaunch skid_steer_robot robot_description.launch
 
 
 
-##🔧 Key Algorithms
+## 🔧 Key Algorithms
 
-#Feature                         #Algorithm                                    #Description
+# Feature                         #Algorithm                                    #Description
 
-Obstacle Avoidance	            #RRT (Rapidly-exploring Random Tree)	         #Uses LiDAR + Ultrasonic data
+Obstacle Avoidance**            RRT (Rapidly-exploring Random Tree)	         #Uses LiDAR + Ultrasonic data
 
 Object Detection	              #YOLOv5 / SSD	                               #Processes mono camera feed
 
